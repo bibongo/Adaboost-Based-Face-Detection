@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Bckround">
+        <file>Images/logo.png</file>
+        <file>Images/ubuntu2.jpg</file>
+    </qresource>
+</RCC>

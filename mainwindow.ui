@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>HFace_finder_</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Image_tab">
+       <attribute name="title">
+        <string>Image_tab_</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Image_display</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_23">
+             <item>
+              <widget class="QLabel" name="Image_disp_label">
+               <property name="minimumSize">
+                <size>
+                 <width>500</width>
+                 <height>300</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>300</height>
+                </size>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(15, 15, 15);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="title">
+                <string>Settings</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_27">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_28">
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_29">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_30">
+                        <item>
+                         <widget class="QLabel" name="Calib_disp1_label_2">
+                          <property name="text">
+                           <string>CalibV1</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="Calib_disp2_label_2">
+                          <property name="text">
+                           <string>CalibV2</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_31">
+                        <item>
+                         <widget class="QLCDNumber" name="Calib_disp1_lcd_2">
+                          <property name="intValue" stdset="0">
+                           <number>23</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLCDNumber" name="Calib_disp2_lcd_2">
+                          <property name="intValue" stdset="0">
+                           <number>25</number>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_32">
+                        <item>
+                         <widget class="QDial" name="Calib_disp1_dial_2">
+                          <property name="maximum">
+                           <number>255</number>
+                          </property>
+                          <property name="value">
+                           <number>23</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QDial" name="Calib_disp2_dial_2">
+                          <property name="maximum">
+                           <number>255</number>
+                          </property>
+                          <property name="value">
+                           <number>25</number>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_30">
+                      <item>
+                       <layout class="QVBoxLayout" name="verticalLayout_31">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_33">
+                          <item>
+                           <widget class="QLabel" name="Frame_color_label_2">
+                            <property name="text">
+                             <string>Frame_color:</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="Color_label">
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_32">
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_34">
+                            <item>
+                             <widget class="QLCDNumber" name="Red_val_lcd_2">
+                              <property name="intValue" stdset="0">
+                               <number>115</number>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLCDNumber" name="Green_val_lcd_2">
+                              <property name="intValue" stdset="0">
+                               <number>119</number>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLCDNumber" name="Blue_val_lcd_2">
+                              <property name="intValue" stdset="0">
+                               <number>224</number>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_35">
+                            <item>
+                             <widget class="QLabel" name="Red_label_2">
+                              <property name="text">
+                               <string>R</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QSlider" name="Red_slider_2">
+                              <property name="maximum">
+                               <number>255</number>
+                              </property>
+                              <property name="value">
+                               <number>115</number>
+                              </property>
+                              <property name="orientation">
+                               <enum>Qt::Vertical</enum>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="Green_label_2">
+                              <property name="text">
+                               <string>G</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QSlider" name="Green_slider_2">
+                              <property name="maximum">
+                               <number>255</number>
+                              </property>
+                              <property name="value">
+                               <number>119</number>
+                              </property>
+                              <property name="orientation">
+                               <enum>Qt::Vertical</enum>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="Blue_label_2">
+                              <property name="text">
+                               <string>B</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QSlider" name="Blue_slider_2">
+                              <property name="maximum">
+                               <number>255</number>
+                              </property>
+                              <property name="value">
+                               <number>224</number>
+                              </property>
+                              <property name="orientation">
+                               <enum>Qt::Vertical</enum>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="Open_img_2">
+                        <property name="text">
+                         <string>Open_img</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="Remove_img_2">
+                        <property name="text">
+                         <string>Remove_img</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="Face_detect_2">
+                        <property name="text">
+                         <string>Face_detect</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Performance_image">
+       <attribute name="title">
+        <string>Performance_tab</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
